@@ -7,6 +7,8 @@
     "build-dev": "webpack -d --mode development",
     "build": "webpack -p --env.prod",
     "clean": "rm dist/bundle.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "webpack-dev-server --open --hot --contentBase src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +22,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.3.0",
     "file-loader": "^6.1.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.4.1",
     "lodash-webpack-plugin": "^0.11.5",
     "prettier": "^2.1.2",

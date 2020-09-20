@@ -1,6 +1,6 @@
 # Leaflet Heatmap Demo
 
-Demo for creating a heatmap. Uses Leaflet and heatmap.js to produce a heatmap of the top 1000 US Cities by population.
+Demo for creating a heatmap. Uses Leaflet and heatmap.js to produce a heatmap of the top 1000 US Cities by population. See a live demo [here](https://median-man.github.io/leaflet-heatmap-demo/).
 
 ![heatmap screenshot](assets/screenshot.png)
 
