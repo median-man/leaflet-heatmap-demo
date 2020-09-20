@@ -9,7 +9,7 @@ const osmAttribution = () =>
   "<a href='https://www.openstreetmap.org/copyright'>© OpenStreetMap contributors</a>";
 
 const baseLayer = L.tileLayer(
-  "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+  "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
   {
     attribution: osmAttribution(),
     maxZoom: 18,
