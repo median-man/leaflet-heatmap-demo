@@ -1,8 +1,17 @@
-# Leaflet Quick Start
+# Leaflet Heatmap Demo
 
-[Quick Start example](https://leafletjs.com/examples/quick-start/) found in the [Leaflet Documentation](https://leafletjs.com/).
+Demo for creating a heatmap. Uses Leaflet and heatmap.js to produce a heatmap of the top 1000 US Cities by population.
 
-## Installing Development Tools
+![heatmap screenshot](assets/screenshot.png)
+
+## Resources
+
+- [cities.json](https://gist.github.com/Miserlou/c5cd8364bf9b2420bb29) - Source for population data.
+- [heatmap.js](https://www.patrick-wied.at/static/heatmapjs/) - Plugin for creating heat map layer for Leaflet.
+- [Leaflet](https://leafletjs.com/) - Mapping Library
+- [OpenStreetMap Tiles](https://wiki.openstreetmap.org/wiki/Tiles) - Map tile images for Leaflet map base layer.
+
+## Usage
 
 This app is built using Webpack 4. Several npm scripts have been configured to make building and development easy.
 
