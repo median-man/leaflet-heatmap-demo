@@ -4,7 +4,6 @@ const LodashModuleReplacementPlugin = require("lodash-webpack-plugin");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = (env) => {
   const isProd = env && env.prod;
@@ -26,15 +25,19 @@ module.exports = (env) => {
         },
         {
           test: /\.css$/,
-          use: [MiniCssExtractPlugin.loader, "css-loader"],
+          use: ["style-loader", "css-loader"],
+        },
+        {
+          test: /\.png$/,
+          use: ["file-loader"],
         },
       ],
     },
     plugins: [
       new CleanWebpackPlugin(),
-      new MiniCssExtractPlugin(),
       new HtmlWebpackPlugin({
         template: path.join(__dirname, "src/index.html"),
+        cache: false,
       }),
       new LodashModuleReplacementPlugin(),
       new BundleAnalyzerPlugin({

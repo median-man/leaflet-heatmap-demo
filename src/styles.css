@@ -1,7 +1,6 @@
 body {
-  background-color: red;
+    margin: 0;
 }
-h1 {
-  color: white;
-  background-color: black;
+#map {
+  height: 100vh;
 }
